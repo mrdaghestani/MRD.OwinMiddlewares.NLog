@@ -11,7 +11,7 @@ namespace MRD.OwinMiddlewares.NLog
     {
         public static IAppBuilder UseNLog(this IAppBuilder app)
         {
-            global::NLog.LogManager.Configuration
+            //global::NLog.LogManager.Configuration
 
             return app.NotifyRequestInfoWithNLog()
                 .UseExceptionLoggerWithNLog()
