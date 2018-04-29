@@ -1,6 +1,7 @@
 ﻿using Owin;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,9 +10,9 @@ namespace MRD.OwinMiddlewares.NLog
 {
     public static class Extensions
     {
-        public static IAppBuilder UseNLog(this IAppBuilder app)
+        public static IAppBuilder UseNLog(this IAppBuilder app, string logDirName = null)
         {
-            //global::NLog.LogManager.Configuration
+            NLogLogger.Init(logDirName);
 
             return app.NotifyRequestInfoWithNLog()
                 .UseExceptionLoggerWithNLog()
