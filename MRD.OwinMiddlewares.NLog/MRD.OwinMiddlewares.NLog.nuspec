@@ -12,7 +12,7 @@
     <copyright>Copyright © 2018</copyright>
     <tags>owin, middleware, webapi</tags>
     <dependencies>
-      <dependency id="MRD.OwinMiddlewares" version="1.0.0.11" />
+      <dependency id="MRD.OwinMiddlewares" version="1.0.0.13" />
       <dependency id="NLog" version="4.5.3" />
     </dependencies>
   </metadata>
