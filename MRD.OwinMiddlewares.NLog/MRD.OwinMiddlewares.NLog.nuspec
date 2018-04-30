@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MRD.OwinMiddlewares.NLog</id>
-    <!--<version>$version$</version>-->
+    <version>1.0.0.0</version>
     <title>MRD.OwinMiddlewares.NLog</title>
     <authors>MRDaghestani</authors>
     <owners>MRDaghestani</owners>
