@@ -9,10 +9,15 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Some owin middlewares to log api request/response/exception</description>
     <releaseNotes>Under the test</releaseNotes>
-    <copyright>Copyright 2018</copyright>
+    <copyright>Copyright © 2018</copyright>
     <tags>owin, middleware, webapi</tags>
+    <dependencies>
+      <dependency id="MRD.OwinMiddlewares" version="1.0.0.11" />
+      <dependency id="NLog" version="4.5.3" />
+    </dependencies>
   </metadata>
   <files>
-    <file src="NLog.config" target="content\NLog.config" />
+    <file src="NLog.config" target="content" />
+    <file src="bin\Release\MRD.OwinMiddlewares.NLog.dll" target="lib\net461" />
   </files>
 </package>
