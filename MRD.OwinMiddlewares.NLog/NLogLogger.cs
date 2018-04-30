@@ -16,12 +16,15 @@ namespace MRD.OwinMiddlewares.NLog
 
         internal static void Init(string logDirName = null)
         {
-            if (string.IsNullOrEmpty(logDirName))
+            if (LogManager.Configuration != null)
             {
-                logDirName = ConfigurationManager.AppSettings["NLog.DirName"] ?? "MRD";
-            }
+                if (string.IsNullOrEmpty(logDirName))
+                {
+                    logDirName = ConfigurationManager.AppSettings["NLog.DirName"] ?? "MRD";
+                }
 
-            LogManager.Configuration.Variables["LogDirName"] = logDirName;
+                LogManager.Configuration.Variables["LogDirName"] = logDirName;
+            }
 
             _logger.Trace($"NLog Config Inited.");
         }

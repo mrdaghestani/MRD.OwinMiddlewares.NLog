@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>MRDaghestani</authors>
+    <owners>MRDaghestani</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Some owin middlewares to log api request/response/exception</description>
+    <releaseNotes>Under the test</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>owin, middleware, webapi</tags>
+  </metadata>
+  <files>
+    <file src="NLog.config" target="content\NLog.config" />
+  </files>
+</package>
