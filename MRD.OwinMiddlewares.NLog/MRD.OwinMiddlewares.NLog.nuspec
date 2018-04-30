@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
+    <id>MRD.OwinMiddlewares.NLog</id>
+    <!--<version>$version$</version>-->
+    <title>MRD.OwinMiddlewares.NLog</title>
     <authors>MRDaghestani</authors>
     <owners>MRDaghestani</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
