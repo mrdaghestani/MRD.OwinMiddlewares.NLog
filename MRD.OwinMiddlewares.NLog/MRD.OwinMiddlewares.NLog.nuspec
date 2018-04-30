@@ -10,6 +10,9 @@
     <description>Some owin middlewares to log api request/response/exception using nlog</description>
     <releaseNotes>Under the test</releaseNotes>
     <copyright>Copyright © 2018</copyright>
+    <projectUrl>https://github.com/mrdaghestani/MRD.OwinMiddlewares.NLog</projectUrl>
+    <iconUrl>https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/microsoft-header.png</iconUrl>
+    <repository url="https://github.com/mrdaghestani/MRD.OwinMiddlewares.NLog" branch="master"></repository>
     <tags>owin, middleware, webapi, nlog</tags>
     <dependencies>
       <dependency id="MRD.OwinMiddlewares" version="1.0.0.15" />
