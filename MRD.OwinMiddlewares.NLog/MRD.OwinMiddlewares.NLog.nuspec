@@ -22,5 +22,8 @@
   <files>
     <file src="NLog.config" target="content" />
     <file src="bin\Release\MRD.OwinMiddlewares.NLog.dll" target="lib\net461" />
+
+    <file src="app.config.install.xdt" target="content" />
+    <file src="app.config.uninstall.xdt" target="content" />
   </files>
 </package>

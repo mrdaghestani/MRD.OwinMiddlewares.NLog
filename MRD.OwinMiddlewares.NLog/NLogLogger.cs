@@ -20,7 +20,7 @@ namespace MRD.OwinMiddlewares.NLog
             {
                 if (string.IsNullOrEmpty(logDirName))
                 {
-                    logDirName = ConfigurationManager.AppSettings["NLog.DirName"] ?? "MRD";
+                    logDirName = ConfigurationManager.AppSettings["MRD.OwinMiddlewares.NLog.DirName"] ?? "c:/logs/MRD";
                 }
 
                 LogManager.Configuration.Variables["LogDirName"] = logDirName;

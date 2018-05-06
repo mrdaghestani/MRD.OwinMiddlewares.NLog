@@ -21,17 +21,7 @@ namespace MRD.OwinMiddlewares.NLog
         }
         public static IAppBuilder NotifyRequestInfoWithNLog(this IAppBuilder app)
         {
-            return app.NotifyRequestInfo(info =>
-            {
-                global::NLog.MappedDiagnosticsLogicalContext.Set("RequestId", info.Id);
-                global::NLog.MappedDiagnosticsLogicalContext.Set("URL", info.Uri.ToString());
-                global::NLog.MappedDiagnosticsLogicalContext.Set("Method", info.Method);
-                global::NLog.MappedDiagnosticsLogicalContext.Set("QueryString", info.QueryString);
-                global::NLog.MappedDiagnosticsLogicalContext.Set("LocalIpAddress", info.LocalIpAddress);
-                global::NLog.MappedDiagnosticsLogicalContext.Set("RemoteIpAddress", info.RemoteIpAddress);
-                global::NLog.MappedDiagnosticsLogicalContext.Set("XForwardedFor", info.XForwardedFor);
-
-            });
+            return app.NotifyRequestInfo(new NLogNotifyRequestService());
         }
         public static IAppBuilder UseRequestBodyLoggerWithNLog(this IAppBuilder app)
         {
