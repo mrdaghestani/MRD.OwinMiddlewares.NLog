@@ -10,7 +10,7 @@ namespace MRD.OwinMiddlewares.NLog
 {
     public class NLogNotifyRequestService : INotifyRequestService
     {
-        public async Task Notify(RequestInfo requestInfo)
+        public void Notify(RequestInfo requestInfo)
         {
             global::NLog.MappedDiagnosticsLogicalContext.Set("RequestId", requestInfo.Id);
             global::NLog.MappedDiagnosticsLogicalContext.Set("URL", requestInfo.Uri.ToString());
