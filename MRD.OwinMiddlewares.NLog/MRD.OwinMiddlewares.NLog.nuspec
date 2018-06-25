@@ -15,7 +15,7 @@
     <repository url="https://github.com/mrdaghestani/MRD.OwinMiddlewares.NLog"></repository>
     <tags>owin, middleware, webapi, nlog</tags>
     <dependencies>
-      <dependency id="MRD.OwinMiddlewares" version="1.0.0.22" />
+      <dependency id="MRD.OwinMiddlewares" version="1.0.0.24" />
       <dependency id="NLog" version="4.5.3" />
     </dependencies>
   </metadata>
